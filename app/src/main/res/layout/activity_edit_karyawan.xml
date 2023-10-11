@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_karyawan"
+    android:background="#FF9B50">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="407dp"
+        android:layout_height="173dp"
+        android:background="#E25E3E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvinputdatakaryawan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Data Karyawan"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/editid"
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="ID Karyawan"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editnama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editnama"
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Nama Karyawan"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editalamat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editalamat"
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Alamat Karyawan"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edittanggallahir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edittanggallahir"
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Tanggal Lahir"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnedit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnedit"
+        android:layout_width="169dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#952323"
+        android:text="EDIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
